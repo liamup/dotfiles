@@ -1,0 +1,76 @@
+# oh-my-zsh plugins
+
+# plugins=(git
+#         zsh-autosuggestions
+#         zsh-syntax-highlighting
+#         autojump
+#         docker
+#         conda-zsh-completion
+# )
+
+# my own program
+export PATH=/home/tiezhu/program:$PATH
+export PATH=/home/tiezhu/program/cmake/bin:$PATH
+export PATH=/home/tiezhu/.cargo/bin:$PATH
+export PATH=/home/tiezhu/.local/bin:$PATH
+
+# wsl use clash
+export hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
+export https_proxy="http://${hostip}:7890"
+export http_proxy="http://${hostip}:7890"
+
+# 打开windows文件资源管理器
+alias el="explorer.exe ."
+
+# 配置默认文本编辑器为nvim
+export EDITOR="lvim"
+
+# ls命令底色问题
+ if [ -x /usr/bin/dircolors ]; then
+     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+        alias ls='ls --color=auto'
+        alias dir='dir --color=auto'
+        alias vdir='vdir --color=auto'
+        alias grep='grep --color=auto'
+        alias fgrep='fgrep --color=auto'
+        alias egrep='egrep --color=auto'
+ fi
+
+# git log 等命令不重新打开新的页面
+git config --global core.pager ''
+
+alias gs="git status"
+alias gc="git commit -m "
+alias gl="git log"
+alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gb="git branch"
+alias ga="git add -A"
+alias go="git checkout"
+alias gp="git push;git push github"
+
+alias condaw="conda.exe"
+
+#fzf配置
+export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
+function vf(){
+	nvim $(fzf)
+}
+
+# 快捷键
+alias q="exit"
+alias c="clear"
+
+# 命令简写
+alias cp="cp -r"
+alias rm="rm -rf"
+alias s="source ~/.zshrc"
+
+# 快速打开软件
+alias n="lvim"
+alias nvim="lvim"
+alias l="lvim"
+alias t="tmux"
+alias lg="lazygit"
+alias r="ranger"
+
+export CLANG_FORMAT_STYLE=file

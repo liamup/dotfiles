@@ -1,0 +1,37 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.config/lvim: lvim 
+    ~/.gdbinit:
+    ~/.myconfig:
+    ~/.gitconfig:
+    ~/.cgdb:
+    ~/.gitignore_global:
+    # ~/.pythonrc:
+    ~/.config/tmux: tmux
+    ~/.tmux.conf: tmux/tmux.conf
+    # ~/.config/lazygit: lazygit
+    # ~/.config/nvim: nvim
+    # ~/.zsh:
+    # ~/.zshrc:
+    # ~/.shell_local_before:
+    # ~/.zfunctions/prompt_spaceship_setup: zsh/prompt/spaceship-prompt/spaceship.zsh
+
+- create:
+  - ~/.rtorrent/session
+  - ~/.rtorrent/watch
+  - ~/.rtorrent/downloads
+
+- shell:
+  - git submodule sync --recursive
+  # the following have to run after linking ~/.gitconfig
+  - git update-submodules
+  # - >
+  #   git cleanall -f
+  #   shell/plugins/
+  #   zsh/plugins/
