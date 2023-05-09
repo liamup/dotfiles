@@ -18,6 +18,11 @@ M.config = function()
   -- =========================================
   require("user.telescope").config()
 
+  -- neovim-treesitter
+  -- =========================================
+  lvim.builtin.treesitter.rainbow.enable = true
+  
+  lvim.builtin.bufferline.options.numbers = "ordinal"
   -- Bufferline
   -- =========================================
   lvim.builtin.bufferline.options.numbers = "ordinal"

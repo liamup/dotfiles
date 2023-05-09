@@ -90,6 +90,9 @@ M.config = function()
         require("user.neovim-cmake").config()
       end
     },
+    {
+        "mrjones2014/nvim-ts-rainbow",
+    }
   }
 end
 
