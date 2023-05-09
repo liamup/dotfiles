@@ -14,6 +14,7 @@ M.config = function()
   lvim.builtin.which_key.setup.window.border = "rounded" -- 设置圆角
 
   require("telescope").load_extension('live_grep_args')
+  require("telescope").load_extension('ui-select')
   lvim.builtin.which_key.mappings["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_cursor({previewer = false, layout_strategy = 'center', layout_config = {width = 0.35, height = 0.5, prompt_position='top'}}))<cr>",
     "Find File"
@@ -53,6 +54,19 @@ M.config = function()
     p = { "<cmd>lua require('spectre').open()<CR>", "Replace Project" },
     s = { "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Search" },
   }
+  lvim.builtin.which_key.mappings["c"] = {
+    name = "CMake",
+    g = {"<cmd>CMake configure<CR>", "Configure"},
+    t = {"<cmd>CMake select_target<CR>", "SelectTarget"},
+    T = {"<cmd>CMake select_build_type<CR>", "SelectBuildType"},
+    b = {"<cmd>CMake build<CR>", "BuildTarget"},
+    a = {"<cmd>CMake build_all<CR>", "BuildAll"},
+    r = {"<cmd>CMake build_and_run<CR>", "Run"},
+    d = {"<cmd>CMake build_and_debug<CR>", "DebugTarget"},
+    c = {"<cmd>CMake cancel<CR>", "Cancel"},
+    s = {"<cmd>CMake set_target_args<CR>", "SetArg"},
+  }
+
 
   require("user.keybindings").config()
   -- Telescope
@@ -74,6 +88,10 @@ M.config = function()
   lvim.builtin.lualine.inactive_sections = require("user.utils").lualine.inactive_sections
   lvim.builtin.lualine.tabline = {}
   lvim.builtin.lualine.extensions = {}
+
+  -- DAP
+  -- =========================================
+  require("user.dap").config()
 end
 
 return M

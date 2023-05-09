@@ -53,6 +53,9 @@ M.config = function()
       end
     },
     {
+      "nvim-telescope/telescope-ui-select.nvim",
+    },
+    {
       "iamcco/markdown-preview.nvim",
       build = "cd app && npm install",
       ft = "markdown",
@@ -80,7 +83,13 @@ M.config = function()
     },
     {
       "windwp/nvim-spectre"
-    }
+    },
+    {
+      "ravenxrz/neovim-cmake",
+      config = function()
+        require("user.neovim-cmake").config()
+      end
+    },
   }
 end
 
