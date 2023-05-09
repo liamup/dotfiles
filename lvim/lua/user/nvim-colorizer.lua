@@ -6,7 +6,6 @@ M.config = function()
     vim.notify("colorizer not found!")
     return
   end
-  vim.notify("colorizer found!")
   colorizer.setup()
 end
 
