@@ -8,6 +8,7 @@ M.config = function()
   ]]
 
   vim.o.termguicolors = true
+  vim.opt.shiftwidth = 4
   -- which_key
   -- =========================================
   require("user.which-key").config()
