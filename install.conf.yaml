@@ -15,6 +15,7 @@
     # ~/.pythonrc:
     ~/.config/tmux: tmux
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.config/joshuto: joshuto
     # ~/.config/lazygit: lazygit
     # ~/.config/nvim: nvim
     # ~/.zsh:
