@@ -25,6 +25,7 @@ lvim.builtin.treesitter.auto_install = false
 -- LSP
 -- =========================================
 lvim.format_on_save.pattern = { "*.cpp", "*.c", "*.md" }
+lvim.lsp.installer.setup.automatic_installation = false
 
 -- keybindings
 -- =========================================
