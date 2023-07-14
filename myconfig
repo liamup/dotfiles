@@ -75,3 +75,15 @@ alias lg="lazygit"
 alias r="ranger"
 
 export CLANG_FORMAT_STYLE=file
+
+# ==================回收站==================
+# 初始化回收站目录
+mkdir -p ~/.trash
+# 设置别名
+alias rm=trash
+
+# 移动文件到回收站
+trash()
+{
+    mv $@ ~/.trash/
+}
