@@ -92,7 +92,16 @@ M.config = function()
     },
     {
         "mrjones2014/nvim-ts-rainbow",
-    }
+    },
+    {
+        "ray-x/lsp_signature.nvim",
+        event = "BufRead",
+        opts = {
+            hint_enable = false,
+            bind = true,
+        },
+        config = function(_, opts) require'lsp_signature'.setup(opts) end,
+    },
   }
 end
 
