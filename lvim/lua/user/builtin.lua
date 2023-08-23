@@ -36,7 +36,7 @@ M.config = function()
 
   -- DAP
   -- =========================================
-  require("user.dap").config()
+  -- require("user.dap").config()
 end
 
 return M
