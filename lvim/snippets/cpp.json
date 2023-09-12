@@ -24,5 +24,19 @@
             "};"
         ],
         "description": "c++链表"
+    },
+    "C++最基本的程序": {
+        "prefix": "cppb",
+        "body": [
+            "#include <iostream>",
+            "",
+            "using namespace std;",
+            "",
+            "int main(int argc, char*argv[]) {",
+            "",
+            "    return 0;",
+            "}"
+        ],
+        "description": "C++最基本的程序"
     }
 }
