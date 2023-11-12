@@ -1,4 +1,4 @@
-l
+local M = {}
 
 M.config = function()
   -- auto wrap
