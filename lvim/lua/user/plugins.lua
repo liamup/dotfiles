@@ -17,7 +17,7 @@ M.config = function()
       "Shatur/neovim-session-manager",
       config = function()
         require("user.neovim-session-manager").config()
-        vim.api.nvim_set_keymap("n", "ZZ", ":lua require('user.utils').SaveAndExit()<cr>", opts)
+        vim.api.nvim_set_keymap("n", "ZZ", ":lua require('user.utils.utils').SaveAndExit()<cr>", opts)
       end,
     },
     {

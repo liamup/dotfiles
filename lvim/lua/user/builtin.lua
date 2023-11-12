@@ -1,4 +1,4 @@
-local M = {}
+l
 
 M.config = function()
   -- auto wrap
@@ -28,9 +28,9 @@ M.config = function()
 
   -- LuaLine
   -- =========================================
-  lvim.builtin.lualine.options = require("user.utils").lualine.options
-  lvim.builtin.lualine.sections = require("user.utils").lualine.sections
-  lvim.builtin.lualine.inactive_sections = require("user.utils").lualine.inactive_sections
+  lvim.builtin.lualine.options = require("user.utils.lualine").lualine.options
+  lvim.builtin.lualine.sections = require("user.utils.lualine").lualine.sections
+  lvim.builtin.lualine.inactive_sections = require("user.utils.lualine").lualine.inactive_sections
   lvim.builtin.lualine.tabline = {}
   lvim.builtin.lualine.extensions = {}
 
