@@ -102,6 +102,37 @@ M.config = function()
         },
         config = function(_, opts) require'lsp_signature'.setup(opts) end,
     },
+    -- colorscheme
+    -- https://vimcolorschemes.com/top
+    {
+        "joshdick/onedark.vim"
+    },
+    {
+        "sainnhe/sonokai",
+        config = function()
+          vim.cmd([[
+            let g:sonokai_style = "atlantis"
+          ]])
+        end
+    },
+    {
+        "rmehri01/onenord.nvim"
+    },
+    {
+        "EdenEast/nightfox.nvim"
+    },
+    {
+        "shaunsingh/nord.nvim"
+    },
+    {
+        "folke/tokyonight.nvim"
+    },
+    {
+        "catppuccin/nvim"
+    },
+        {
+            "rose-pine/neovim"
+        }
   }
 end
 

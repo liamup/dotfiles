@@ -8,6 +8,12 @@ M.config = function()
   ]]
 
   vim.o.termguicolors = true
+
+  -- coloscheme
+  math.randomseed(os.time())
+  themes = require("user.utils.colorscheme").themes
+  lvim.colorscheme = themes[math.random(#themes)]
+
   -- which_key
   -- =========================================
   require("user.which-key").config()
