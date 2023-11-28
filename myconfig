@@ -68,7 +68,7 @@ alias s="source ~/.zshrc"
 
 # 快速打开软件
 alias n="lvim"
-alias nvim="lvim"
+# alias nvim="lvim"
 alias l="lvim"
 alias t="tmux"
 alias lg="lazygit"
