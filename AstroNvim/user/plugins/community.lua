@@ -13,6 +13,7 @@ return {
   -- lsp
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" }, -- parameter prompt
   -- tools
   { import = "astrocommunity.motion.flash-nvim" }, -- easy motion
   { import = "astrocommunity.editing-support.todo-comments-nvim" }, -- TODO
