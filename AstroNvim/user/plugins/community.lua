@@ -13,6 +13,7 @@ return {
   -- lsp
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.python" },
   {
     "Civitasv/cmake-tools.nvim",
     -- enabled = false,
