@@ -13,6 +13,10 @@ return {
   -- lsp
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
+  {
+    "Civitasv/cmake-tools.nvim",
+    -- enabled = false,
+  },
   { import = "astrocommunity.lsp.lsp-signature-nvim" }, -- parameter prompt
   -- tools
   { import = "astrocommunity.motion.flash-nvim" }, -- easy motion
