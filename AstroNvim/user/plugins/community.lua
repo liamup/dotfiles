@@ -8,6 +8,8 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine" },
+  -- color
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   -- lsp
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
