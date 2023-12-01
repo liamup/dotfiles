@@ -20,6 +20,9 @@ return {
     -- enabled = false,
   },
   { import = "astrocommunity.lsp.lsp-signature-nvim" }, -- parameter prompt
+  -- Debug
+  { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   -- tools
   { import = "astrocommunity.motion.flash-nvim" }, -- easy motion
   { import = "astrocommunity.editing-support.todo-comments-nvim" }, -- TODO
