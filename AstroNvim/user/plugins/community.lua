@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.colorscheme.rose-pine" },
   -- color
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  { import = "astrocommunity.indent.mini-indentscope" },
   -- lsp
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
