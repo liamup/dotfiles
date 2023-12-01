@@ -9,5 +9,6 @@ local themes = {
 
 math.randomseed(os.time())
 M.theme = themes[math.random(#themes)]
+M.theme = "tokyonight-night"
 
 return M
