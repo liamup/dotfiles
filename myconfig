@@ -14,6 +14,7 @@ export PATH=/home/tiezhu/program/cmake/bin:$PATH
 export PATH=/home/tiezhu/.cargo/bin:$PATH
 export PATH=/home/tiezhu/.local/bin:$PATH
 export PATH=/usr/local/cgdb/bin:$PATH
+export PATH=/home/tiezhu/.local/share/bob/nvim-bin:$PATH
 
 # wsl use clash
 export hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
