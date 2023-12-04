@@ -15,10 +15,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.python" },
-  {
-    "Civitasv/cmake-tools.nvim",
-    -- enabled = false,
-  },
   { import = "astrocommunity.lsp.lsp-signature-nvim" }, -- parameter prompt
   -- Debug
   { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
