@@ -48,8 +48,8 @@ return {
       pattern = "SessionLoadPost",
       group = config_group,
       callback = function()
-        vim.defer_fn(function() vim.cmd.Neotree "focus" end, 5)
-        vim.defer_fn(function() vim.cmd.wincmd "p" end, 5)
+        vim.defer_fn(function() vim.cmd.Neotree "focus" end, 1)
+        vim.defer_fn(function() vim.cmd.wincmd "p" end, 1)
       end,
     })
   end,
