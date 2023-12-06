@@ -6,5 +6,7 @@ return {
     shiftwidth = 4,
     smartindent = true,
     tabstop = 4,
+    wrap = true,
+    showbreak = "↪",
   },
 }
