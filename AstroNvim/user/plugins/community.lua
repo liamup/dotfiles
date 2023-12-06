@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.indent.mini-indentscope" },
   -- lsp
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" }, -- parameter prompt
