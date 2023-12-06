@@ -1,9 +1,8 @@
 {
   "lspconfig": {
-     "pyright": {
+    "pyright": {
       "python.pythonPath": "python",
-      "python.analysis.diagnosticMode": "workspace",
-    },
+      "python.analysis.diagnosticMode": "workspace"
+    }
   }
 }
-
