@@ -22,5 +22,6 @@ return {
   { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
   -- tools
   { import = "astrocommunity.motion.flash-nvim" }, -- easy motion
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" }, -- TODO
 }
