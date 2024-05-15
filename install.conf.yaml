@@ -16,7 +16,7 @@
     ~/.config/tmux: tmux
     ~/.tmux.conf: tmux/tmux.conf
     ~/.config/joshuto: joshuto
-    ~/.config/nvim/lua/user: AstroNvim/user
+    ~/.config/nvim: AstroNvim
     # ~/.config/lazygit: lazygit
     # ~/.config/nvim: nvim
     # ~/.zsh:

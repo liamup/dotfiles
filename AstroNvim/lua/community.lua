@@ -11,7 +11,10 @@ return {
   -- color
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
+  -- heirline
+  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   -- lsp
+  { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
@@ -23,5 +26,5 @@ return {
   -- tools
   { import = "astrocommunity.motion.flash-nvim" }, -- easy motion
   { import = "astrocommunity.editing-support.multicursors-nvim" },
-  { import = "astrocommunity.editing-support.todo-comments-nvim" }, -- TODO
+  { import = "astrocommunity.utility.noice-nvim" },
 }
