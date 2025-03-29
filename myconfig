@@ -25,7 +25,7 @@ export PATH=/home/tiezhu/.local/share/bob/nvim-bin:$PATH
 alias el="explorer.exe ."
 
 # 配置默认文本编辑器为nvim
-export EDITOR="lvim"
+export EDITOR="nvim"
 
 # ls命令底色问题
  if [ -x /usr/bin/dircolors ]; then
