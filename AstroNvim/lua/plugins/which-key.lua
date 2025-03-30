@@ -2,7 +2,7 @@ return {
   "folke/which-key.nvim",
   opts = function(_, opts)
     return require("astrocore").extend_tbl(opts, {
-      window = {
+      win = {
         border = "single", -- none, single, double, shadow
       },
     })
