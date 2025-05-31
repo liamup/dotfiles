@@ -54,6 +54,8 @@ alias gp="git push;git push github"
 
 alias condaw="conda.exe"
 
+alias ta="tmux attach -t"
+
 #fzf配置
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
 function vf(){
